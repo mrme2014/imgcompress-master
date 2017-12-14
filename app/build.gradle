@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.mrs.imgcompress"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+//    task deleteOldJar(type: Delete) {
+//        //删除存在的
+//        delete 'build/libs/imgcompress.jar'
+//    }
+//
+//    task makeJar(type: org.gradle.api.tasks.bundling.Jar) {
+//        //指定生成的jar名
+//        baseName 'imgcompress'
+//
+//        //从哪里打包class文件
+//        //com/c_imageloader为包名目录
+//        from('build/intermediates/classes/debug/com/mrs/imgcompress')
+//
+//        //jar包的目录结构(文件处于com/c_imageloader目录下)
+//        //生成的jar包没有包名
+//        into('com/mrs/imgcompress')
+//
+//        //去掉不需要打包的目录和文件
+//        exclude('BuildConfig.class', 'R.class')
+//
+//        //去掉R$开头的文件
+//        exclude{ it.name.startsWith('R$');}
+//    }
+//
+//    makeJar.dependsOn(deleteOldJar, build)
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.support:appcompat-v7:24.1.1'
+
+    compile project(':libcompress')
+}

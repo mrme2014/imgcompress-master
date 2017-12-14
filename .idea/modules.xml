@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\mrs\Desktop\imgcompress-master\imgcompress.iml" filepath="C:\Users\mrs\Desktop\imgcompress-master\imgcompress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imgcompress-master.iml" filepath="$PROJECT_DIR$/imgcompress-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libcompress/libcompress.iml" filepath="$PROJECT_DIR$/libcompress/libcompress.iml" />
+    </modules>
+  </component>
+</project>
